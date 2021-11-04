@@ -103,7 +103,9 @@ function clearScore(){
     p2Score = 0;
     $("#p1-score").text(`${p1Score}`);
     $("#p2-score").text(`${p2Score}`);
+    turn = 1;
     console.log("Scores reset");
     turn = 1;
     $("#turn").text("P1");
-}
+  }
+};
