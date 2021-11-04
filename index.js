@@ -98,12 +98,14 @@ function clearGame(){
     $(".O").removeClass("O");
     turnCounter = 0;
     winCombo = 0;
+    turn = 1;
 };
 
 function clearScore(){
     p1Score = 0;
-    p2score = 0;
+    p2Score = 0;
     $("#p1-score").text(`${p1Score}`);
     $("#p2-score").text(`${p2Score}`);
+    turn = 1;
     console.log("Scores reset");
-}
+};
