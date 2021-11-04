@@ -101,6 +101,7 @@ function clearGame(){
 function clearScore(){
     p1Score = 0;
     p2Score = 0;
+    tie = 0;
     $("#p1-score").text(`${p1Score}`);
     $("#p2-score").text(`${p2Score}`);
     turn = 1;
