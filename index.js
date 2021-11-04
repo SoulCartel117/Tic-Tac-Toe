@@ -16,7 +16,6 @@ $(".box").click(function(){
         $("#turn").text("P2");
         turnCounter++;
         console.log(turnCounter);
-        // checkWin();
         counter();
     }
     else{
@@ -26,7 +25,6 @@ $(".box").click(function(){
         $("#turn").text("P1");
         turnCounter++;
         console.log(turnCounter);
-        // checkWin2();
         counter();
     }
 });
@@ -35,8 +33,6 @@ function counter(){
     checkWin();
     checkWin2();
     if (turnCounter === 9){
-        // checkWin();
-        // checkWin2();
         if (winCombo === 0){
             tie++;
             $("#tie").text(`${tie}`);
@@ -104,7 +100,7 @@ function clearGame(){
 
 function clearScore(){
     p1Score = 0;
-    p2score = 0;
+    p2Score = 0;
     $("#p1-score").text(`${p1Score}`);
     $("#p2-score").text(`${p2Score}`);
     console.log("Scores reset");
